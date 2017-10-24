@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+%%\usepackage[MeX]{polski}
+%%\usepackage[cp1250]{inputenc}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[tableposition=top]{caption}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\begin{document}
+\section{Formuły matematyczne w TeXu}
+Przetrenuj używanie w TeXu matematycznych form i symboli z rodziału 1 po czym wykonaj polecenie z rozdziału 2.
+\subsection{Zapis Matematyczny}
+\subsubsection{Tryb matematyczny}
+Tryb matematyczny 'inline' - wzory pisane w lini tekstu wstawiamy przy pomocy \$ wzór \$ (wzór wpisujemy w pojedyncze dolary
+
+Ułamek w tekście $ \frac{1}{x} $ 
+Oto równanie $c^{2}=a^{2}+b^{2}$
+
+\noindent 
+Ułamek w tekście $ \frac{1}{x}$ 
+Oto równanie $c^{2}=a^{2}+b^{2}$
+
+
+	Tryb matematyczny z zastosowaniem podwójnych dolarów \$\$ wzór \$\$
+
+
+Ułamek $$ \frac{1}{x} $$ 
+Oto równanie $$c^{2}=a^{2}+b^{2}$$
+
+
+
+\noindent 
+Ułamek $$ \frac{1}{x} $$ 
+Oto równanie $$c^{2}=a^{2}+b^{2}$$
+
+Tryb matematyczny z użyciem struktury 'equation'
+
+
+Ułamek
+\begin{equation}
+\frac{1}{x}
+\label{eq:równanie1}
+\end{equation}
+
+Oto równanie 
+
+\begin{equation}
+c^{2}=a^{2}+b^{2}
+\label{eq:równanie2}
+\end{equation}
+Można odnieść się do powyższych wzorów wykorzystując polecenie 'eqref{etykieta}'.
+Ułamek ma numer (1) a równanie ma numer (2)
+
+	Zad.1.
+	
+	Przestudiuj trzy powyższe przypadki, zwróć uwagę na różnice w wyświetlaniu i możliwości późniejszego odwołania się do równania. Przepisz je do latex'a i spróbuj odnieść się do równania zdefiniowanych przy pomocy 'equation'.
+\end{document}
